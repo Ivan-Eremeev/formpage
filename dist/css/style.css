@@ -1,0 +1,215 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* /reset */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.eot");
+  src: url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.woff") format("woff"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-regular.svg") format("svg");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.eot");
+  src: url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.woff") format("woff"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/open-sans/open-sans-v27-latin_cyrillic-700.svg") format("svg");
+}
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.formpage {
+  padding: 60px 15px;
+}
+.formpage__block {
+  max-width: 1140px;
+  padding: 5px 5px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.formpage__title {
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.formpage__text {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.formpage__text span {
+  background-color: #fff100;
+}
+.formpage__form {
+  max-width: 364px;
+  padding: 25px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formpage__row {
+  margin-bottom: 20px;
+}
+.formpage__select {
+  position: relative;
+}
+.formpage__select select {
+  width: 100%;
+  height: 42px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.formpage__select select::-ms-expand {
+  display: none;
+}
+.formpage__select select:focus {
+  border-color: #3d7385;
+}
+.formpage__select select option {
+  background-color: #fff;
+  color: #333;
+}
+.formpage__select i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  pointer-events: none;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.formpage__input input {
+  width: 100%;
+  height: 42px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+  font-size: 14px;
+}
+.formpage__input input:focus {
+  border-color: #3d7385;
+}
+.formpage__label {
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+.formpage__btn {
+  width: 100%;
+  padding: 14px 28px;
+  margin-top: 5px;
+  background-color: #ffd310;
+  border: 1px solid #d9b100;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.formpage__btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: #f4c700;
+  border-color: #ad8e00;
+  color: black;
+}
+.formpage__btn i {
+  font-size: 23px;
+  margin-right: 9px;
+}
